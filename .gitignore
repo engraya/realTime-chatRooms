@@ -15,6 +15,7 @@ results
 
 # dotenv environment variables file
 .env
+.env.local
 
 # React build
 /build

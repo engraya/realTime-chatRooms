@@ -1,4 +1,9 @@
 import axios from 'axios'
+import NavbarComponent from './NavbarComponent'
+import MainComponent from './MainComponent'
+import FooterComponent from './FooterComponent'
+import RightColComponent from './RightColComponent'
+
 
 const AuthPage = (props) => {
     const onSubmit = (e) => {
@@ -12,7 +17,13 @@ const AuthPage = (props) => {
     };
   
     return (
+      <div>
+      <NavbarComponent/>
+      <MainComponent/>
+      <RightColComponent/>
+  
       <div className="background">
+ 
         <form onSubmit={onSubmit} className="form-card">
           <div className="form-title">Welcome 👋</div>
   
@@ -27,7 +38,9 @@ const AuthPage = (props) => {
           </div>
         </form>
       </div>
-    );
+          <FooterComponent/>
+      </div>
+      );
   };
   
   export default AuthPage;
